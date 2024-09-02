@@ -1,0 +1,200 @@
+body {
+    font-family: Arial, Helvetica, sans-serif; /*define a fonte do site num todo */
+
+    margin: 0;  /* remove tamanho da margem so navegador*/
+
+    padding: 0;/*remove o preenchedor do navegador */
+
+     background-color: #e9a1fde2;/*cor do fundo da pagina*/
+    }
+
+
+h1, h2
+    {
+    color:#ffffff/* muda os titulos h1 e h2*/
+    }
+
+p   
+    {
+    color: #1d0036; /*muda a cor da fonte dos paragrafos */
+    }
+/* muda e estiliza o corpo do site e a nevegação */
+header 
+    {
+    background-color: #8F6D98; /*cor de fundo do corpo */
+    padding: 10px;/* espaço interno do conteúdo*/
+    }
+
+
+nav {
+    display: flex; /* deixa mais o layout mais facil na navegação */
+    justify-content: center; /*  centraliza na horinzontal os itens da aba de navegação*/
+    }
+/*  */
+nav a 
+    {
+    color: rgba(85, 85, 85, 0.603); /*define a cor dos links intenos na navegação */
+    text-decoration: none; /* remove o sublinhado dos links*/
+    padding: 10px 20px; /* espaçamento ao redor do links */
+    margin: 0 5px; /* margem */
+    border-radius: 5px; /* arrendonda os cantos  */
+    background-color:  #FAB9F4; /* cor de fundo dos links */
+    }
+
+/* muda a cor quando o mouse passa por cima */
+nav a:hover {
+    background-color: #f1c3fc;
+}
+
+/*estiliza as seções */
+main {
+    display: flex;/*layout flexível para o contéudo inicial*/
+
+    flex-direction: column;/* organiza em coluna vertical*/
+
+    align-items: center;/* centraliza na horizontal*/
+
+    justify-content: center;/*centraliza na vertical*/
+
+    min-height: 100vh;/*ocupa toda altura da viewport */
+
+    padding: 20px;/*espaçamento interno da pagina inicial*/
+
+    text-align: center;/*centraliza o texto*/
+}
+
+/*estuliza os links internos*/
+.image-links 
+    {
+    display: flex;/*felixivel pra links das imagens*/
+
+    flex-wrap: wrap;/*faz com que as imagens se movam pra linha de baixo se não tiver espaço*/
+
+    justify-content: center;/*centraliza as imagens na horinzontal */
+
+    gap: 20px;/*espaço entre as imagens*/
+
+    margin: 20px 0;/*margem superior e inferior*/
+    }
+
+/*  */
+.image-link {
+    display: flex;/*felixivel pra links das imagens */
+
+    flex-direction: column;/*deixa a imagem na vertical*/
+
+    align-items: center;/*centraliza a imagem e o texto na horinzontal*/
+
+    text-align: center;/* centraliza o texto dentro do link*/
+
+    border-radius: 10px;/* arredonda os cantos d link*/
+
+    overflow: hidden;/* conteudo não excede o link*/
+
+    border: 2px solid #ddd;/*adiciona borda ao redor d ink  */
+
+    transition: border-color 0.3s;/* transição na cor da borda*/
+
+    width: 200px;/*largura fixa do link*/
+}
+/* */
+.image-link:hover 
+
+    {
+    /*muda cor da borda quando o mouse passa em cima*/
+    border-color: #e9f935; 
+    }
+
+.image-link img 
+    {
+    width: 100%; /*ajusta pra largura do link*/
+
+    height: auto; /*mantém tamanho da imagem*/
+    }
+
+
+.image-link p 
+    {
+    margin: 0; /*remove margem padrão*/
+    padding: 10px; /* espaçamento ao redor do texto*/
+    background-color: #f7a5e7; /*cor do paragrafo */
+    border-top: 2px solid #d1bebe; /*borda superior */
+}
+
+/*estiliza os links internos*/
+section {
+    max-width: 1200px; /*definição de largura */
+    width: 100%; /* largura da seção*/
+    padding: 30px; /* adiciona espaçamento ao redor da seção*/
+    box-sizing: border-box;/* */
+}
+
+/*  */
+form 
+    {
+    width: 100%; /*define a largura do formulario*/
+
+    padding: 20px;/*adciona espaçemnto interno ao redor do conteúdo*/
+
+    border: 5px solid #782891;/* adicona borda ao redor do formulario*/
+
+    border-radius: 10px;/* arredonda os cantos*/
+
+    box-shadow: 0 0 10px rgba(230, 155, 245, 0.1); /* adiciona sombra ao redor*/
+
+    background-color: #ffffff;/* cor de fundo do formulario*/
+
+    margin: 0 auto; /*centraliza o formulario*/
+
+    text-align: left;/*alinha os textos na esquerda dentro do formulario*/
+    }
+
+
+
+label {
+    display: block; /* rotulo como bloco*/
+
+    margin-bottom: 5px; /* margem inferior*/
+
+    font-weight: bold; /*define em negrito */
+}
+
+input, textarea 
+    {
+    width: calc(100% - 22px); /*ajusta a largura nos cantos*/
+
+    padding: 10px; /*bloco como rotulo*/
+
+    margin-bottom: 15px; /* adiciona margem inferior*/
+
+    border: 1px solid #1d0036; /* adiciona uma borda*/
+
+    border-radius: 5px; /* arredonda os cantos*/
+
+    box-sizing: border-box; /*incui a borda e pudding no calculo */
+    }
+    
+
+button 
+    {
+    padding: 10px 20px; /*adiciona espaçamento interno verticalmente */
+
+    border: none;/* remove a borda padrão*/
+
+    border-radius: 5px; /* arredonda os cantos do botão*/
+
+    background-color: #9a06f6; /* cor de fundo do botão*/
+
+    color: white; /* cor do texto do botão*/
+
+    font-size: 16px; /* tamanho da fonte*/
+
+    cursor: pointer; /* muda o consor para uma maozinha*/
+
+    transition: background-color 0.3s; /* transição de cor suave*/
+}
+
+button:hover 
+    {
+    background-color: #1d0036; /*muda a cor do botão quando o mouse passa por cima */
+    }
